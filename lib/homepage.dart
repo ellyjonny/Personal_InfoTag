@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:personal_infotag/models/statusbar.dart';
 
 class Homepage extends StatefulWidget {
   @override
@@ -38,81 +39,23 @@ class _HomepageState extends State<Homepage> {
             children: [
               Text('Elias John'),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Spacer(),
-                  Container(
-                    height: 22,
-                    width: 90,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(2),
-                      color: Colors.white,
-                    ),
-                    child: Row(
-                      children: [
-                        Text(
-                          'Followers: ',
-                          style: TextStyle(
-                              fontSize: 10, fontWeight: FontWeight.bold),
-                        ),
-                        Text('12.4K',
-                            style: TextStyle(
-                                fontSize: 10, fontWeight: FontWeight.bold)),
-                        Icon(
-                          Icons.verified,
-                          size: 12,
-                          color: Colors.lightBlue,
-                        )
-                      ],
-                    ),
+                  StatusBar(
+                    name: "Followers",
+                    count: "12.4K",
+                    seticon: Icons.verified,
                   ),
-                  Spacer(),
-                  Container(
-                    height: 22,
-                    width: 80,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(2),
-                      color: Colors.white,
-                    ),
-                    child: Row(
-                      children: [
-                        Text(
-                          'Following: ',
-                          style: TextStyle(
-                              fontSize: 10, fontWeight: FontWeight.bold),
-                        ),
-                        Text('2000',
-                            style: TextStyle(
-                                fontSize: 10, fontWeight: FontWeight.bold)),
-                      ],
-                    ),
+                  StatusBar(
+                    name: "Following",
+                    count: "1789",
+                    seticon: Icons.radio,
                   ),
-                  Spacer(),
-                  Container(
-                    height: 22,
-                    width: 60,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(2),
-                      color: Colors.white,
-                    ),
-                    child: Row(
-                      children: [
-                        Text(
-                          'Post: ',
-                          style: TextStyle(
-                              fontSize: 10, fontWeight: FontWeight.bold),
-                        ),
-                        Text('560',
-                            style: TextStyle(
-                                fontSize: 10, fontWeight: FontWeight.bold)),
-                        Icon(
-                          Icons.post_add,
-                          size: 12,
-                          color: Colors.green,
-                        )
-                      ],
-                    ),
+                  StatusBar(
+                    name: "Post",
+                    count: "1000",
+                    seticon: Icons.icecream,
                   ),
-                  Spacer(),
                 ],
               ),
             ],
@@ -122,10 +65,3 @@ class _HomepageState extends State<Homepage> {
     ));
   }
 }
-
-//  Spacer(),
-//                     Text('Following: '),
-//                     Text('2000'),
-//                     Spacer(),
-//                     Text('Post: '),
-//                     Text('569')
