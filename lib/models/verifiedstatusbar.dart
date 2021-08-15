@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
-class StatusBar extends StatelessWidget {
+class VerifiedStatusBar extends StatelessWidget {
   final String name;
   final String count;
-
-  StatusBar({@required this.name, @required this.count});
+  var seticon;
+  VerifiedStatusBar(
+      {@required this.name, @required this.count, @required this.seticon});
 
   @override
   Widget build(BuildContext context) {
@@ -24,6 +25,10 @@ class StatusBar extends StatelessWidget {
           ),
           Text('$count',
               style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold)),
+          Icon( seticon,
+            size: 12,
+            color: Colors.lightBlue,
+          )
         ],
       ),
     );
