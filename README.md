@@ -13,7 +13,27 @@
 
 ### 🏠 [Homepage](index.js)
 
+## Check Your Environment
 
+```sh
+flutter doctor
+```
+
+## Run
+
+```sh
+flutter run
+```
+
+## Author
+
+👤 **Elias John**
+
+* Twitter:(https://twitter.com/ellyjony)
+* LinkedIn:(https://linkedin.com/in/ellyjonny)
+
+## Show Your Support🚀
+## For the ❤ of flutter
 
 
 
