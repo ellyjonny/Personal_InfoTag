@@ -12,7 +12,8 @@
 > This is the personal profile in a social media .
 
 ### 🏠 [Homepage](index.js)
-<img src="../assets/infotag.jpg" width="80%" height="80%"> 
+<img src="../assets/infotag.jpg"> 
+<!-- width="80%" height="80%" -->
 ## Check Your Environment
 
 ```sh
