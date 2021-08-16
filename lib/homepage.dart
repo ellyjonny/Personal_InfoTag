@@ -16,7 +16,7 @@ class _HomepageState extends State<Homepage> {
             color: Colors.black,
             image: DecorationImage(
                 fit: BoxFit.cover,
-                image: AssetImage("../assets/madeinblack.jpg"))),
+                image: AssetImage("../assets/sunflower.jpg"))),
         child: Stack(children: [
           Center(
             child: Container(
@@ -42,7 +42,7 @@ class _HomepageState extends State<Homepage> {
                     child: Column(
                       children: [
                         SizedBox(
-                            height: MediaQuery.of(context).size.height / 16),
+                            height: MediaQuery.of(context).size.height / 20),
                         Column(
                           children: [
                             Text(
@@ -52,7 +52,14 @@ class _HomepageState extends State<Homepage> {
                             ),
                             SizedBox(
                                 height:
-                                    MediaQuery.of(context).size.height / 32),
+                                    MediaQuery.of(context).size.height / 80),
+                            Text(
+                              "@ellyjonny",
+                              style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                                height:
+                                    MediaQuery.of(context).size.height / 64),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -77,6 +84,31 @@ class _HomepageState extends State<Homepage> {
                                 ),
                               ],
                             ),
+                             SizedBox(
+                                height:
+                                    MediaQuery.of(context).size.height / 64),
+                            Row(
+                              children: [
+                                SizedBox(
+                                    width:
+                                        MediaQuery.of(context).size.width / 64),
+                                Icon(Icons.location_on,size: 12),
+                                SizedBox(
+                                    width:
+                                        MediaQuery.of(context).size.width / 200),
+                                Text(
+                                  'Dar es Salaam🎈',
+                                  style: TextStyle(fontSize: 10),
+                                ),
+                                SizedBox(
+                                    width:
+                                        MediaQuery.of(context).size.width / 64),
+                                Text(
+                                  'Joined March 2019',
+                                  style: TextStyle(fontSize: 10),
+                                ),
+                              ],
+                            )
                           ],
                         )
                       ],
