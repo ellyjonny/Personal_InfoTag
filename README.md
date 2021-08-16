@@ -1,4 +1,23 @@
-# personal_infotag
+<h1 align="center"> Personal_Infotag🧑</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
+  </a>
+  <a href="https://twitter.com/ellyjonny" target="_blank">
+    <img alt="Twitter: ellyjonny" src="https://img.shields.io/twitter/follow/ellyjonny.svg?style=social" />
+  </a>
+</p>
+
+> This is the personal profile in a social media .
+
+### 🏠 [Homepage](index.js)
+
+
+
+
+
+<!-- # personal_infotag
 
 A new Flutter project.
 
@@ -13,4 +32,4 @@ A few resources to get you started if this is your first Flutter project:
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+samples, guidance on mobile development, and a full API reference. -->
