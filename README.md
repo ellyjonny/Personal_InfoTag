@@ -12,8 +12,11 @@
 > This is the personal profile in a social media .
 
 ### 🏠 [Homepage](index.js)
+<img src="assets/infotag.jpg"> 
 
-## Check Your Environment
+
+
+### Check Your Environment
 
 ```sh
 flutter doctor
