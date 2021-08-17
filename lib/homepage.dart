@@ -1,7 +1,9 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:personal_infotag/models/roundedbutton.dart';
 import 'package:personal_infotag/models/statusbar.dart';
 import 'package:personal_infotag/models/verifiedstatusbar.dart';
+import 'package:personal_infotag/resetpage.dart';
 
 class Homepage extends StatefulWidget {
   @override
@@ -13,7 +15,6 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Container(
         decoration: BoxDecoration(
-            color: Colors.black,
             image: DecorationImage(
                 fit: BoxFit.cover,
                 image: AssetImage("../assets/sunflower.jpg"))),
@@ -35,6 +36,23 @@ class _HomepageState extends State<Homepage> {
                   Container(
                     color: Colors.black,
                     height: 150,
+                    width: 300,
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 220, top: 10),
+                          child: ButtonWidget(
+                            buttontext: 'Edit Profile',
+                            onPress: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => EditProfile()));
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   Container(
                     color: Colors.white,
@@ -55,7 +73,8 @@ class _HomepageState extends State<Homepage> {
                                     MediaQuery.of(context).size.height / 80),
                             Text(
                               "@ellyjonny",
-                              style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                  fontSize: 10, fontWeight: FontWeight.bold),
                             ),
                             SizedBox(
                                 height:
@@ -84,7 +103,7 @@ class _HomepageState extends State<Homepage> {
                                 ),
                               ],
                             ),
-                             SizedBox(
+                            SizedBox(
                                 height:
                                     MediaQuery.of(context).size.height / 64),
                             Row(
@@ -92,10 +111,10 @@ class _HomepageState extends State<Homepage> {
                                 SizedBox(
                                     width:
                                         MediaQuery.of(context).size.width / 64),
-                                Icon(Icons.location_on,size: 12),
+                                Icon(Icons.location_on, size: 12),
                                 SizedBox(
-                                    width:
-                                        MediaQuery.of(context).size.width / 200),
+                                    width: MediaQuery.of(context).size.width /
+                                        200),
                                 Text(
                                   'Dar es Salaam🎈',
                                   style: TextStyle(fontSize: 10),
